@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model checkpoints (large files)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+
+# Video/image data (privacy + size)
+tests/data/real/*.mp4
+tests/data/real/*.avi
+tests/data/real/*.mov
+tests/data/manipulated/*.mp4
+tests/data/manipulated/*.avi
+tests/data/manipulated/*.mov
+
+# Generated outputs
+*.log
+output/
+
+# Secrets / API keys
+.env
+secrets.py

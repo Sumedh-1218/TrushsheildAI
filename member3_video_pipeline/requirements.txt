@@ -1,0 +1,15 @@
+# TrustShield AI — Member 3 — Video Pipeline Dependencies
+# Keep this lean. Only install what is actually required.
+
+# Video decoding, frame extraction, face detection (Haar cascade)
+opencv-contrib-python==4.10.0.84
+
+# Numerical array operations (required by OpenCV and frame processing)
+numpy>=1.26.0
+
+# Unit and integration testing
+pytest>=7.4.0
+
+
+# Note: No torch/tensorflow/ML frameworks — mock detector uses only numpy/opencv.
+# Member 2 will supply the real model. Add its dependencies at integration time.
